@@ -6,7 +6,7 @@ const { exec } = require('child_process');
 // Configuration 
 //====================================
 const config = {
-    localDir: "/handshakes/pcap/" //shared folder setup in vagrant
+    localDir: "/home/sic/Desktop/pwnagotchi-tools/handshakes/pcap/" //shared folder setup in vagrant
 };
 
 let successfulPMKIDs = 0;
