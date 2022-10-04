@@ -3,16 +3,20 @@ import json
 import re
 from random import randint
 
+project_path = os.environ.get("PROJECT_PATH)
+hashcat_path = os.environ.get("HASHCAT_PATH")
+wordlist_path = os.environ.get("WORDLIST_PATH")
+
 # The FULL path to the 'pwnagotchi-tools' folder in this repo
-fullProjectPath = "C:\Users\pwnagotchi-tools\\"
+fullProjectPath = "{project_path}"
 
 # The FULL path to your hashcat 6.x.x install. Even if hashcat is added to your path,
 # there are problems saving and accessing the session files when running hashcat
 # commands while not in the hashcat folder, so the full path is needed
-fullHashcatPath = "C:\Users\hashcat-6.0.0\\"
+fullHashcatPath = "{hashcat_path}"
 
 # the FULL path to where your wordlists are saved
-fullWordListPath = "C:\Users\wordlists\\"
+fullWordListPath = "{wordlist_path}
 
 # This is the 'version' of the hashcat attacks in this file. This is
 # used to track the scripts used on the pmkid/hccapx files. If the

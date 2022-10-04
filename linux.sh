@@ -1,10 +1,18 @@
 #!/bin/sh
 # Author: sic
 INSTALL_LOCATION=/home/sic/Desktop
+HASHCAT_LOCATION=
+WORDLIST_LOCATION=
 
 echo "*** MUST BE RUN AS ROOT ***"
 
 echo "DIR=$INSTALL_LOCATION/pwnagotchi-tools/handshakes/pcap/" >> $INSTALL_LOCATION/pwnagotchi-tools/handshakes/pwnagetty/.env
+
+cat <<EOT >> .env
+PROJECT_PATH= "$INSTALL_LOCATION/pwnagotchi-tools//"
+HASHCAT_PATH= "$HASHCAT_LOCATION//"
+WORDLIST_PATH= "$WORDLIST_LOCATION//"
+EOT
 
 mkdir $INSTALL_LOCATION/pwnagotchi-tools/handshakes/pcap
 ssh-keygen -t rsa
@@ -27,4 +35,3 @@ npm install
 npm install dotenv
 node pwnagetty.js
 chmod -R a+rwx $INSTALL_LOCATION/pwnagotchi-tools/handshakes/*
-
