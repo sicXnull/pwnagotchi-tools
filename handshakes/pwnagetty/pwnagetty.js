@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const { exec } = require('child_process');
-
+const dotenv = require("dotenv")
+dotenv.config()
 //====================================
 // Configuration 
 //====================================
 const config = {
-    localDir: "/home/sic/Desktop/pwnagotchi-tools/handshakes/pcap/" //shared folder setup in vagrant
+    localDir:(process.env.DIR) //shared folder setup in vagrant
 };
 
 let successfulPMKIDs = 0;
