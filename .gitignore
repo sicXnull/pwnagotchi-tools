@@ -4,7 +4,7 @@ vagrant/.vagrant
 # node_modules should never be added to git
 handshakes/pwnagetty/node_modules
 
-handshakes/pcap/*.pcap
+handshakes/pcap
 handshakes/pmkid
 handshakes/hccapx
 handshakes/pwnagetty/bssids.json
