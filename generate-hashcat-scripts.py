@@ -3,7 +3,7 @@ import json
 import re
 from random import randint
 
-project_path = os.environ.get("PROJECT_PATH)
+project_path = os.environ.get("PROJECT_PATH")
 hashcat_path = os.environ.get("HASHCAT_PATH")
 wordlist_path = os.environ.get("WORDLIST_PATH")
 
