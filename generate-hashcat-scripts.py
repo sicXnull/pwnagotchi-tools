@@ -16,7 +16,7 @@ fullProjectPath = "{project_path}"
 fullHashcatPath = "{hashcat_path}"
 
 # the FULL path to where your wordlists are saved
-fullWordListPath = "{wordlist_path}"
+fullWordListPath = "{wordlist_path}
 
 # This is the 'version' of the hashcat attacks in this file. This is
 # used to track the scripts used on the pmkid/hccapx files. If the
