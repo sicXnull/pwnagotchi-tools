@@ -35,6 +35,6 @@ cd $INSTALL_LOCATION/pwnagotchi-tools/handshakes/pwnagetty
 npm install
 npm install dotenv
 node pwnagetty.js
-chmod -R a+rwx $INSTALL_LOCATION/pwnagotchi-tools/*
 cd $INSTALL_LOCATION/pwnagotchi-tools
 python3 generate-hashcat-scripts.py
+chmod -R a+rwx $INSTALL_LOCATION/pwnagotchi-tools/*
