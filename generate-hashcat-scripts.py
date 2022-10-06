@@ -210,7 +210,7 @@ def generateScriptForBatch():
         f = open(f"./hashcat/scripts/batches/batch-{randint(1000, 9999)}.{script_format}", "w")
         batchScript = ""
         for script in sessionScripts:
-            batchScript += 'call "' + fullProjectPath + 'hashcat/scripts' + script + '"\n'
+            batchScript += 'call "' + fullProjectPath + 'hashcat/scripts/' + script + '"\n'
         f.write(batchScript)
         f.close()
         print("\nBatch script created for " + str(len(sessionScripts)) + " scripts")
