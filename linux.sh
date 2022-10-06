@@ -12,7 +12,7 @@ cat <<EOT >> .env
 PROJECT_PATH="$INSTALL_LOCATION/pwnagotchi-tools/"
 HASHCAT_PATH="$HASHCAT_LOCATION/"
 WORDLIST_PATH="$WORDLIST_LOCATION/"
-SCRIPT_TYPE=".sh"
+SCRIPT_TYPE="sh"
 EOT
 
 mkdir $INSTALL_LOCATION/pwnagotchi-tools/handshakes/pcap
